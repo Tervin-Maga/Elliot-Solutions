@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'elliotsolutions'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_749C454514F0434FA9CAE7EA525FCCE7 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E2D5E1CB69014A7DAC8A955C2A8E6C43 }}
           package: .
