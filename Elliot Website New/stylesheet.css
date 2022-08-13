@@ -1,0 +1,1027 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.sec0{
+    background: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    box-decoration-break: 0 0 0 #7f946f;
+}
+
+.sec0 .logo{
+    height: 100px;
+    width: 100px;
+}
+
+.sec1{
+    width: 100%;
+    height: 76.5vh;
+    border: none;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-image: url("Pictures/wetleaf.jpeg");
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media (max-width: 320px){
+    .sec1{
+        height: 50vh;
+    }
+
+    .sec1 img{
+        width: 300px;
+        margin-top: 55px;
+    }
+  }
+
+nav{
+    background: #ffffff;
+    height: 60px;
+    margin: 0 5px;
+    border-top: 3px solid #7f946f;
+    border-image: linear-gradient(90deg, #fff, #7f946f, #fff) 1;
+    border-top-width: 3px;
+    border-top-style: solid;
+    overflow: hidden;
+}
+
+nav img{
+    width: 55px;
+    position: absolute;
+}
+
+nav ul{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: -10px;
+    
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+  }
+  nav ul li a{
+    color: #080808;
+    font-size: 17px bold;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: "Allerta";
+    text-decoration: none;
+  }
+  a.active,a:hover{
+    background: #7f946f;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: #080808;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+      z-index: 100;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 10;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #7f946f;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+.sec2{
+    width: 100%;
+    height: 125vh;
+    border: none;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sec2 .content .h2{
+    position: relative;
+    font-family: "Allerta";
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    color: #080808;
+    margin-left: 30%;
+    text-transform: uppercase;
+}
+
+.sec2 .content .h2{
+    font-family: "Allerta";
+    font-weight: 200;
+    font-size: 20px;
+    color: #080808;
+    text-align: center;
+    margin-left: -10px;
+    margin-bottom: 15px;
+}
+
+.sec2 .content .h20{
+    font-family: "Allerta";
+    font-weight: 200;
+    font-size: 38px;
+    color: #555;
+    text-align: center;
+    margin-left: -10px;
+    margin-bottom: 15px;
+}
+
+.intro .content{
+    margin-left: 90px;
+}
+
+#img{
+    height: 200px;
+}
+
+.intro .content .intro-imgs{
+    z-index: 1;
+    background: #7f946f;
+    position: relative;
+    text-align: left 100px;
+    float: left;
+    width: 300px;
+    height: 195px;
+    margin: 20px;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+.big-intro{
+    width: 1210px;
+    height: 480px;
+    margin-top: 280px;
+    
+    background-image: url("Pictures/intro.jpg");
+    background-size: 100%;
+    background-position: center;
+    border-radius: 10px;
+  }
+
+.big-intro h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #365e17;
+    font-family: "Allerta";
+    margin: 10px;
+    padding-top: 15px;
+}
+
+.big-intro-p{
+    width: 500px;
+    float: left;
+    margin: 10px;
+    color: #365e17;
+    font-family: "Allerta";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.stars{
+    width: 15px;
+    margin-top: 270px;
+    margin-left: -50px;
+    position: relative;
+    display: inline-flex;
+}
+
+@media screen and (max-width: 425px){
+    .sec2{
+        height: 225vh;
+    }
+    
+    .big-intro{
+        width: 350px;
+        margin: 0;
+        margin-top: 750px;
+    }
+
+    .big-intro-p{
+        width: 250px;
+        font-size: 12.9px;
+        font-weight: 600;
+    }
+
+    .intro{
+        padding: 0px;
+        width: 100px;
+    }
+
+    .intro .content{
+        margin-left: 0px;
+    }
+
+    .intro .content .intro-imgs{
+        margin-left: 1px;
+        width: 350px;
+    }
+
+    .sec2 .content .h20{
+        font-size: 34px;
+    }
+}
+
+.sec3{
+    width: 100%;
+    height: 70vh;
+    border: none;
+    background-color: #7f946f;
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sec3 .content{
+    max-width: 850px;
+    text-align: center;
+}
+
+.sec3 .content .h2{
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-size: 70px;
+    color: #080808;
+    margin-left: 40%;
+}
+
+.sec3 .content p{
+    font-weight: 300;
+    color: #fff;   
+}
+
+img{
+    width: 100%;
+    transition: transform 1s;
+}
+
+@media screen and (max-width: 1920px){
+    .sec3 .content h2{
+        margin-left: 56%;
+        font-size: 100px;
+    }
+
+    .sec3 .content{
+        max-width: 1150px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .sec3 .content h2{
+        font-size: 100px;
+    }
+
+    .sec3 .content{
+        max-width: 855px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .sec3 .content h2{
+        font-size: 70px;
+    }
+
+    .sec3 .content{
+        max-width: 630px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 779px){
+    .sec3 .content{
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .sec3 .content h2{
+        font-size: 65px;
+        margin-left: 38%;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 799px){
+    .sec3 .content{
+        max-width: 520px;
+        text-align: center;
+    }
+
+    .sec3 .content h2{
+        font-size: 65px;
+        margin-left: 38%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 819px){
+    .sec3 .content{
+        max-width: 520px;
+        text-align: center;
+    }
+
+    .sec3 .content h2{
+        font-size: 65px;
+        margin-left: 38%;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .sec3 .content{
+        display: grid;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .sec3 .content h2{
+            font-size: 50px;
+            margin-left: 1%;
+    }
+
+    .img23{
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 412px){
+    .sec3{
+        height: 560px;
+    }
+}
+
+.sec4{
+    width: 100%;
+    height: 70vh;
+    border: none;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sec4 .content{
+    max-width: 850px;
+    text-align: center;
+}
+
+.sec4 .content .h2{
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-size: 70px;
+    color: #080808;
+    margin-left: 40%;
+}
+
+.sec4 .content p{
+    font-weight: 300;
+    color: #fff;
+    margin-left: 50%;
+}
+
+.sec7{
+    width: 100%;
+    height: 100vh;
+    border: none;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sec7 .content{
+    max-width: 850px;
+    text-align: center;
+}
+
+.sec7 .content .h2{
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-size: 70px;
+    color: #080808;
+    margin-left: 40%;
+}
+
+.sec7 .content .p2{
+    font-weight: 300;
+    color: #fff;
+}
+
+@media screen and (max-width: 1920px){
+    .sec7 .content h2{
+        font-size: 100px;
+    }
+
+    .sec7 .content{
+        max-width: 1150px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .sec7 .content h2{
+        font-size: 100px;
+    }
+
+    .sec7 .content{
+        max-width: 855px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .sec7 .content h2{
+        font-size: 70px;
+    }
+
+    .sec7 .content{
+        max-width: 630px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .sec7 .content h2{
+        font-size: 60px;
+    }
+
+    .sec7 .content{
+        max-width: 450px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .sec7 .content h2{
+        font-size: 50px;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 412px){
+    .sec7{
+        height: 560px;
+    }
+}
+
+.sec6{
+    width: 100%;
+    height: 70vh;
+    border: none;
+    background-color: #7f946f;
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /*Styles for product card*/
+  
+  .product .product-card{
+    z-index: 1;
+    background: transparent;
+    position: relative;
+    width: 340px;
+    height: 480px;
+    margin: 30px;
+    margin-bottom: 1000px;
+    border-radius: 10px;
+  }
+
+  .descrpt{
+    z-index: 2;
+    color: #080808;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding-top: 285px;
+    border-radius: 20px;
+  }
+
+  #scrpt{
+    color: #fff;
+  }
+  
+  .product .product-card:before{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .product .product-card .product-img{
+    z-index: 1;
+    position: absolute;
+    max-width: 400px;
+    height: 210px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .product .product-card .name{
+    z-index: 2;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    bottom: 460px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .sec6 .product .product-card .name{
+      color: #fff;
+  }
+
+  .sec3 .product .product-card .name{
+    color: #fff;
+}
+  
+  .product .product-card .price{
+    z-index: 2;
+    color: #fff;
+    position: absolute;
+    width: 10%;
+    text-align: center;
+    bottom: 160px;
+    right: 56.5%;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .product .product-card .popup-btn{
+    z-index: 2;
+    color: #fff;
+    background: #555;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 15px 55px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /*Styles for popup view*/
+  
+  .product .popup-view{
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  
+  .product .popup-view.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .product .popup-card{
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+  }
+  
+  .product .popup-card .product-img{
+    z-index: 2;
+    background: #1D212B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .product .popup-card .product-img img{
+    z-index: 2;
+    position: relative;
+    width: 450px;
+    left: -50px;
+  }
+  
+  .product .popup-card .info{
+    z-index: 2;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .product .popup-card .close-btn{
+    color: #555;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .product .popup-card .info h2{
+    font-size: 40px;
+    line-height: 20px;
+    margin: 10px;
+  }
+  
+  .product .popup-card .info h2 span{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .product .popup-card .info p{
+    font-size: 15px;
+    margin: 10px;
+  }
+  
+  .product .popup-card .info .price{
+    font-size: 45px;
+    font-weight: 300;
+    margin: 10px;
+  }
+  
+  .product .popup-card .info .add-cart-btn{
+    color: #fff;
+    background: #7f946f;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px auto;
+    padding: 10px 50px;
+    border-radius: 20px;
+  }
+  
+  .product .popup-card .info .add-wish{
+    color: #7f946f;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  /*Responsive styles*/
+  
+  @media (max-width: 900px){
+    .product .popup-card{
+      flex-direction: column;
+      width: 550px;
+      height: auto;
+    }
+  
+    .product .popup-card .product-img{
+      z-index: 3;
+      width: 100%;
+      height: 200px;
+      transform: translateY(0);
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  
+    .product .popup-card .product-img img{
+      left: initial;
+      max-width: 100%;
+    }
+  
+    .product .popup-card .info{
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  
+    .product .popup-card .info h2{
+      margin: 20px 5px 5px 5px;
+      font-size: 25px;
+    }
+  
+    .product .popup-card .info h2 span{
+      font-size: 10px;
+    }
+  
+    .product .popup-card .info p{
+      margin: 5px;
+      font-size: 13px;
+    }
+  
+    .product .popup-card .info .price{
+      margin: 5px;
+      font-size: 30px;
+    }
+  
+    .product .popup-card .info .add-cart-btn{
+      margin: 5px auto;
+      padding: 5px 40px;
+      font-size: 14px;
+    }
+  
+    .product .popup-card .info .add-wish{
+      font-size: 14px;
+    }
+  
+    .product .popup-card .close-btn{
+      z-index: 4;
+    }
+}
+
+.sec6 .content{
+    max-width: 850px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    transition: transform 1s;
+}
+
+@media screen and (max-width: 320px){
+    .product .product-card{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .sec6{
+        height: 260vh;
+    }
+    
+    .sec4{
+        height: 260vh;
+    }
+
+    .sec3{
+        height: 260vh;
+    }
+
+    .sec6 .content h2{
+        font-size: 50px;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .product .product-card{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .sec6{
+        height: 260vh;
+    }
+    
+    .sec4{
+        height: 260vh;
+    }
+
+    .sec3{
+        height: 260vh;
+    }
+
+    .sec6 .content h2{
+        font-size: 50px;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .product .product-card{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .sec6{
+        height: 260vh;
+    }
+    
+    .sec4{
+        height: 260vh;
+    }
+
+    .sec3{
+        height: 260vh;
+    }
+
+    .sec6 .content h2{
+        font-size: 50px;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .product .product-card{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .sec6{
+        height: 260vh;
+    }
+    
+    .sec4{
+        height: 260vh;
+    }
+
+    .sec3{
+        height: 260vh;
+    }
+
+    .sec6 .content h2{
+        font-size: 50px;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .product .product-card{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .sec6 .content h2{
+        font-size: 50px;
+        margin-left: 1%;
+    }
+}
+
+.sec5{
+    width: 100%;
+    border: none;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.inge{
+    margin-top: 5%;
+}
+.ingred .h22{
+    margin-left: 42%;
+    color: #555;
+    font-size: 30px;
+    font-family: "Allerta";
+}
+
+.footer{
+    margin: 40px;
+    color: #555;
+    text-align: center;
+    border-top: 3px solid #7f946f;
+    border-image: linear-gradient(90deg, #fff, #7f946f, #fff) 1;
+    border-top-width: 3px;
+    border-top-style: solid;
+    align-items: center;
+}
+
+.ico{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 25px;
+    letter-spacing: 20px;
+}
+
+.fa-twitter, .fa-instagram, .fa-whatsapp{
+    color: #555;
+    font-size: 70px;
+}
+
+.footer .content{
+    display: inline-block;
+    padding-right: 50px;
+    padding-left: 90px;
+    margin-top: 30px;
+}
+
+.footer .content h2{
+    margin: 5px;
+    font-size: 35px;
+}
+
+.footer .content .foot{
+    padding-right: 60px;
+    font-size: 25px;
+    letter-spacing: 6px;
+}
+
+.footer .content .h22{
+    margin: 5px;
+    font-size: 30px;
+}
+
+.footer .content .em{
+    font-size: 15px;
+}
